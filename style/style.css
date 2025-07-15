@@ -1,0 +1,197 @@
+body {
+    direction: rtl;
+    background-image: url('bg.jpg');
+    background-repeat : no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color:rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+*{
+  font-family: Tajawal;
+}
+
+
+/* الخطوط  */
+@font-face {
+    font-family: 'Tajawal';
+    src:  url('tajawal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+     
+
+/*  مربع ادخال البيانات */
+.Square{
+    opacity: 0.87;
+    background-color:rgb(219, 217, 217);
+    width:30%;
+    max-width: 30cm;
+    border-radius: 0.3cm;
+    margin-right:8%;
+    padding-right:1cm;
+    padding-left:1cm;
+    color:rgb(0, 0, 0);
+    border-width: 0.01cm;
+    border-color: rgb(255, 255, 255);
+    animation: LoadAnmi 0.5s 1 forwards;
+    overflow-y:auto;
+    height: 68vh;
+}
+
+
+/*هاتف*/
+@media (max-width: 800px) {
+
+    .Square {
+        margin:0 auto;
+        width:60%;
+        height: auto;
+    }
+
+    .SquareContent{
+        margin-top: 1cm;
+        margin-bottom: 1cm;
+    }
+
+}
+
+@keyframes LoadAnmi {
+    0% {
+      transform: translate(100,0);
+    }
+    25%{
+      transform: translate(-100px,0);
+    }
+    75%{
+      transform: translate(100px,0);
+    }
+    75%{
+      transform: translate(-100,0);
+    }
+}
+
+.Square input {
+    width:100%;
+    font-size: 0.6cm;
+    border-radius: 0.1cm;
+    background-color: rgb(211, 208, 208);
+    color:rgb(0, 0, 0);
+    border-width: 0.01cm;
+    border-color: rgb(255, 255, 255);
+}
+
+.Square textarea {
+    width:100%;
+    font-size: 0.6cm;
+    border-radius: 0.1cm;
+    min-height: 4cm;
+    background-color: rgb(212, 212, 212);
+    color:rgb(0, 0, 0);
+}
+
+.Square select{
+    width:100%;
+    font-size: 0.6cm;
+    border-radius: 0.1cm;
+    background-color: rgb(236, 235, 235);
+    color:rgb(0, 0, 0);
+}
+
+.Square ul {
+    padding: 0;
+}
+
+.Square .TopText{
+    font-family: 'Tajawal';
+    font-size: 1cm;
+    text-align: center;
+
+}
+.Square p {
+    font-size: 0.5cm;
+}
+
+.Square li {
+    font-size: 0.5cm;
+}
+
+.Square a {
+    color :#2fbdff;
+    text-decoration: none;
+    font-size: 0.5cm;
+}
+
+
+/* تصاميم الازرار */
+.HomsButton{
+    font-size: 0.5cm;
+    color:rgb(255, 255, 255);
+    min-height: 1.5cm;
+    padding-left: 0.4cm;
+    padding-right: 0.4cm;
+    border-radius: 0.08cm;
+    border-width:0;
+}
+
+.Bigger{
+    transition: transform 0.3s ease-in-out;
+     
+}
+
+.Bigger:hover {
+    transform: scale(1.2) translateX(-7px); 
+  }
+
+
+.nav{
+    background-color: #000000;
+    margin-top: -0.5cm;
+    height: 2.4cm;
+    font-size: 0.6cm;
+    opacity: 0.84;
+    margin-right: -0.5cm;
+    margin-left: -0.5cm;
+}
+
+.nav .left{
+    margin-left: 3CM;
+    display: inline-block;
+    float:left;
+}
+
+.nav .right{
+    margin-right: 3CM;
+    display: inline-block;
+}
+
+@media (max-width: 800px) {
+    .nav .right{
+        margin-top:0.1cm;
+        margin-right: 0.9CM;
+        display: inline-block;
+    }
+    .nav .left{
+        margin-left: 0.8CM;
+    }
+    .right a{
+        font-size: 0.4cm;
+        margin-right:0.1cm;
+        margin-left:0.1cm;
+    }
+}
+
+@media (min-width: 800px) {
+    .nav .right a{
+        margin-right:0.3cm;
+        margin-left:0.3cm;
+    }
+}
+
+.nav .right a{
+    text-decoration: none;
+    color: #a1e1ff;
+}
+
